@@ -48,6 +48,7 @@ export default class Auth extends Component {
       returnSecureToken: true
     };
     try {
+      // eslint-disable-next-line
       const response = axios.post(
         "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyCXMHLwC3iGuFyiu8JYymP5ccm4syassjk",
         authData
@@ -64,6 +65,7 @@ export default class Auth extends Component {
       returnSecureToken: true
     };
     try {
+      // eslint-disable-next-line
       const response = axios.post(
         "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=AIzaSyCXMHLwC3iGuFyiu8JYymP5ccm4syassjk",
         authData
