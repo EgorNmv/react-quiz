@@ -5,8 +5,8 @@ import Backdrop from "../../UI/Backdrop/Backdrop";
 
 // const links = new Array(10).fill("").map((_, index) => `Link ${index + 1}`);
 
-const renderLinks = (links, clickHandler) => {
-  return links.map((link, index) => (
+const renderLinks = (links, clickHandler) =>
+  links.map((link, index) => (
     <li key={index}>
       <NavLink
         to={link.to}
@@ -18,7 +18,6 @@ const renderLinks = (links, clickHandler) => {
       </NavLink>
     </li>
   ));
-};
 
 const Drawer = props => {
   const cls = [classes.Drawer];
